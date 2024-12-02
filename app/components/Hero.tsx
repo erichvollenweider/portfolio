@@ -15,7 +15,7 @@ const categories = ['About', 'Experience', 'Projects', 'Skills']
 export default function Hero({ pageInfo }: Props) {
     const [text, count] = useTypewriter({
         words: [
-            'Hi, Prateek here',
+            'Hi, Erich here',
             'Ideate => Code => Repeat',
             '< Design Critic />',
         ],
