@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .sectionContainer{
+        @apply h-screen flex flex-col items-center overflow-hidden text-center mx-auto
+    }
+    .customScrollbar{
+        @apply scrollbar-thin scrollbar-track-gray-400/20 scrollbar-thumb-cyan-500/40
+    }
+    .sectionHeading{
+        @apply absolute top-16 uppercase tracking-[10px] text-gray-400 text-3xl
+    }
+    .heroButton {
+        @apply m-2 px-4 py-2 border border-gray-400 rounded uppercase text-sm tracking-widest text-gray-400 transition-all hover:border-cyan-400/40 hover:text-cyan-400/40;
+    }
+}
