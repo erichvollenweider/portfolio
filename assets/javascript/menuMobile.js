@@ -18,11 +18,11 @@ menu.onclick = function(){
     if (!verificador) {
         document.querySelector('.menu-mobile').classList.remove('no-show-background');
         verificador = true;
-        name.innerHTML = 'Fechar';
+        name.innerHTML = 'Close';
         document.querySelector('.feature-1').classList.add('girar-feature-1');
         document.querySelector('.feature-2').classList.add('sem-feature');
         document.querySelector('.feature-3').classList.add('girar-feature-3');
-        name.classList.add('cor-fechar'); 
+        name.classList.add('cor-close'); 
     }
     else {
         document.querySelector('.menu-mobile').classList.add('no-show-background');
@@ -31,7 +31,7 @@ menu.onclick = function(){
         document.querySelector('.feature-1').classList.remove('girar-feature-1');
         document.querySelector('.feature-2').classList.remove('sem-feature');
         document.querySelector('.feature-3').classList.remove('girar-feature-3');
-        name.classList.remove('cor-fechar');
+        name.classList.remove('cor-close');
     }
 }
 
@@ -42,7 +42,7 @@ function disappear (){
     document.querySelector('.feature-1').classList.remove('girar-feature-1');
     document.querySelector('.feature-2').classList.remove('sem-feature');
     document.querySelector('.feature-3').classList.remove('girar-feature-3');
-    name.classList.remove('cor-fechar');
+    name.classList.remove('cor-close');
     verificador = false;
 }
 
@@ -66,7 +66,7 @@ document.documentElement.onclick = function(event){
         document.querySelector('.feature-1').classList.remove('girar-feature-1');
         document.querySelector('.feature-2').classList.remove('sem-feature');
         document.querySelector('.feature-3').classList.remove('girar-feature-3');
-        name.classList.remove('cor-fechar');
+        name.classList.remove('cor-close');
         verificador = false;
     }
 }
