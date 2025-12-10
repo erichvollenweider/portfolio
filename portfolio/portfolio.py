@@ -1,0 +1,9 @@
+import reflex as rx
+
+from portfolio.pages.index import index
+import portfolio.styles.styles as styles
+
+app = rx.App(
+    stylesheets=styles.STYLESHEETS,
+    style=styles.BASE_STYLE
+)
