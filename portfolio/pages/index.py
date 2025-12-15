@@ -10,9 +10,8 @@ import portfolio.views.contact_form as cf
 
 
 @rx.page(
-    title= utils.index_title,
-    description= utils.index_description,
-    image= utils.image,
+    title=utils.index_title,
+    description=utils.index_description
 )
 
 

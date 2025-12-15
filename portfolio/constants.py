@@ -19,7 +19,7 @@ DESC_CWAI = "Cooking With AI uses artificial intelligence to analyze images of f
             "to the ingredients you already have at home!"
 DESC_COMP = "A complete compiler for an educational imperative language, implementing all traditional compilation stages." \
             " The project includes a lexical, syntactic, and semantic analyzer, intermediate code generation, and assembler generation."
-CFG_COMP = "Connect Four game designed to run on a console. The decision engine for the computer is implemented with an adversarial search" \
+DESC_CFG = "Connect Four game designed to run on a console. The decision engine for the computer is implemented with an adversarial search" \
            " strategy and uses the Minimax algorithm with alpha-beta pruning."
 DESC_TSQL = "This project implements a Text-to-SQL system that allows users without technical knowledge to generate complex SQL queries" \
             " simply by writing questions in natural language."

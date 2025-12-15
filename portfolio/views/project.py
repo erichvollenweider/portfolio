@@ -27,7 +27,7 @@ def project() -> rx.Component:
             "ConnectFourGame.png",
             cte.CFG,
             "Connect Four Game",
-            cte.CFG_COMP
+            cte.DESC_CFG
         ),
         lp.link_project(
             "lnasql.png",
