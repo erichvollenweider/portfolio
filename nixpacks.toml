@@ -1,5 +1,5 @@
 [phases.setup]
-nixPkgs = ["unzip"]
+nixPkgs = ["python312", "unzip"]
 
 [phases.install]
 cmds = ["pip install -r requirements.txt"]
