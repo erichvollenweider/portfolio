@@ -1,6 +1,11 @@
 import reflex as rx
+import os
 
 config = rx.Config(
     app_name="portfolio",
-    show_built_with_reflex=False
+    # Quita el botón "Built with Reflex"
+    show_built_with_reflex=False,
+    # Configuración para producción
+    backend_host="0.0.0.0",
+    backend_port=8000,
 )
