@@ -23,4 +23,4 @@ RUN reflex init
 EXPOSE 8000
 
 # Comando de inicio (AMBOS: frontend + backend)
-CMD ["reflex", "run", "--env", "prod", "--backend-host", "0.0.0.0", "--backend-port", "8000"]
+CMD ["reflex", "run", "--env", "prod", "--backend-host", "0.0.0.0", "--backend-port", "8000", "--frontend-port", "8000"]
