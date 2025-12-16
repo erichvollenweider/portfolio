@@ -20,7 +20,7 @@ def project() -> rx.Component:
         lp.link_project(
             "compilador.png",
             cte.COMP,
-            "Compilador - TDS25",
+            "Compiler - TDS25",
             cte.DESC_COMP
         ),
         lp.link_project(
