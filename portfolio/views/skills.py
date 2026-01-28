@@ -4,7 +4,6 @@ import portfolio.styles.colors as colors
 import portfolio.components.link_skill as ls
 
 def skill_box(title: str, skills: list) -> rx.Component:
-    # Componente reutilizable para cada caja de skills
     return rx.box(
         rx.vstack(
             rx.text(
@@ -26,18 +25,21 @@ def skill_box(title: str, skills: list) -> rx.Component:
     )
 
 def skills() -> rx.Component:
-    # Definir las skills
     programming_skills = [
         ls.link_skill("python.png", "Python"),
         ls.link_skill("java.png", "Java"),
         ls.link_skill("ruby.png", "Ruby"),
         ls.link_skill("haskell.png", "Haskell"),
         ls.link_skill("c.png", "C"),
+        ls.link_skill("js.png", "JavaScript"),
+        ls.link_skill("ts.svg", "TypeScript"),
+    ]
+
+    web_skills = [
         ls.link_skill("html.png", "HTML"),
         ls.link_skill("css.png", "CSS"),
-        ls.link_skill("js.png", "JavaScript"),
     ]
-    
+
     database_skills = [
         ls.link_skill("mysql.png", "MySQL"),
         ls.link_skill("postgre.png", "PostgreSQL"),
@@ -49,12 +51,21 @@ def skills() -> rx.Component:
         ls.link_skill("matlab.png", "Matlab"),
         ls.link_skill("pivotaltraker.png", "Pivotal Tracker"),
     ]
+
+    frameworks_skills = [
+        ls.link_skill("fastapi.png", "FastAPI"),
+        ls.link_skill("flask.png", "Flask"),
+        ls.link_skill("reflex.png", "Reflex"),
+        ls.link_skill("sinatra.png", "Sinatra"),
+    ]
     
     return rx.box(
         # Vista Mobile y Tablet (una columna)
         rx.mobile_and_tablet(
             rx.vstack(
                 skill_box("Programming", programming_skills),
+                skill_box("Frameworks", frameworks_skills),
+                skill_box("Web", web_skills),
                 skill_box("Data Base", database_skills),
                 skill_box("Tools", tools_skills),
                 spacing="3",
@@ -64,11 +75,17 @@ def skills() -> rx.Component:
         # Vista Desktop (dos columnas)
         rx.desktop_only(
             rx.hstack(
-                skill_box("Programming", programming_skills),
+                rx.vstack(
+                    skill_box("Programming", programming_skills),
+                    skill_box("Frameworks", frameworks_skills),
+                    spacing="3",
+                    width="100%"
+                ),
                 rx.vstack(
                     skill_box("Data Base", database_skills),
+                    skill_box("Web", web_skills),
                     skill_box("Tools", tools_skills),
-                    spacing="5",
+                    spacing="3",
                     width="100%"
                 ),
                 spacing="3",
